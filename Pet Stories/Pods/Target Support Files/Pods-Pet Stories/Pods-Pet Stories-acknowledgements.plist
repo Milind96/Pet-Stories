@@ -1926,7 +1926,7 @@
 			<key>License</key>
 			<string>Apache</string>
 			<key>Title</key>
-			<string>FirebaseInstanceID</string>
+			<string>FirebaseStorage</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
