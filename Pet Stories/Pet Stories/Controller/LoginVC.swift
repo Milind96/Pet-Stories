@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
     
@@ -97,7 +98,7 @@ class LoginVC: UIViewController {
         configureViewComponents()
         
         view.addSubview(dontHaveAccountButton)
-        dontHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+        dontHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 150)
     }
     
     // MARK: - Handlers
@@ -124,24 +125,25 @@ class LoginVC: UIViewController {
     }
     
     @objc func handleLogin(){
-//        guard
-//            let email = emailTextField.text,
-//            let password = passwordTextField.text else { return }
-//
-//        // sign user in with email and password
-//        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-//
-//            // handle error
-//            if let error = error {
-//                print("Unable to sign user in with error", error.localizedDescription)
-//                return
-//            }
-//
-//            guard let mainTabVC = UIApplication.shared.keyWindow?.rootViewController as? MainTabVC else { return }
-//
-//            mainTabVC.configureViewControllers()
-//            self.dismiss(animated: true, completion: nil)
-//        }
+        print("Login Button Pressed")
+        guard
+            let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
+
+        // sign user in with email and password
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+
+            // handle error
+            if let error = error {
+                print("Unable to sign user in with error", error.localizedDescription)
+                return
+            }
+
+            guard let mainTabVC = UIApplication.shared.keyWindow?.rootViewController as? MainTabVC else { return }
+
+                mainTabVC.configureViewControllers()
+                self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func configureViewComponents() {

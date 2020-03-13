@@ -16,6 +16,14 @@
 		A31E65C92416A8C600BEF622 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31E65C82416A8C600BEF622 /* LoginVC.swift */; };
 		A31E65CB2416AB9000BEF622 /* Extensioins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31E65CA2416AB9000BEF622 /* Extensioins.swift */; };
 		A31E65CD2419265300BEF622 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31E65CC2419265300BEF622 /* SignUpVC.swift */; };
+		A35E3B1D241A335700729639 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B1C241A335700729639 /* MainTabVC.swift */; };
+		A35E3B1F241A357B00729639 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B1E241A357B00729639 /* FeedVC.swift */; };
+		A35E3B21241A35A900729639 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B20241A35A900729639 /* SearchVC.swift */; };
+		A35E3B23241A35CA00729639 /* UploadPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B22241A35CA00729639 /* UploadPostVC.swift */; };
+		A35E3B25241A35EC00729639 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B24241A35EC00729639 /* NotificationsVC.swift */; };
+		A35E3B27241A362100729639 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B26241A362100729639 /* UserProfileVC.swift */; };
+		A35E3B29241A83FB00729639 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B28241A83FB00729639 /* Constants.swift */; };
+		A35E3B2B241B306400729639 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E3B2A241B306400729639 /* MessagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		A31E65C82416A8C600BEF622 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A31E65CA2416AB9000BEF622 /* Extensioins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensioins.swift; sourceTree = "<group>"; };
 		A31E65CC2419265300BEF622 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		A35E3B1C241A335700729639 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		A35E3B1E241A357B00729639 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		A35E3B20241A35A900729639 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		A35E3B22241A35CA00729639 /* UploadPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostVC.swift; sourceTree = "<group>"; };
+		A35E3B24241A35EC00729639 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		A35E3B26241A362100729639 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		A35E3B28241A83FB00729639 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A35E3B2A241B306400729639 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		BDB06755E3E746492292F011 /* Pods-Pet Stories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pet Stories.release.xcconfig"; path = "Target Support Files/Pods-Pet Stories/Pods-Pet Stories.release.xcconfig"; sourceTree = "<group>"; };
 		DA6FB8D4CB2C6FC81B6D0464 /* Pods-Pet Stories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pet Stories.debug.xcconfig"; path = "Target Support Files/Pods-Pet Stories/Pods-Pet Stories.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +118,13 @@
 			children = (
 				A31E65C82416A8C600BEF622 /* LoginVC.swift */,
 				A31E65CC2419265300BEF622 /* SignUpVC.swift */,
+				A35E3B1C241A335700729639 /* MainTabVC.swift */,
+				A35E3B1E241A357B00729639 /* FeedVC.swift */,
+				A35E3B20241A35A900729639 /* SearchVC.swift */,
+				A35E3B22241A35CA00729639 /* UploadPostVC.swift */,
+				A35E3B24241A35EC00729639 /* NotificationsVC.swift */,
+				A35E3B26241A362100729639 /* UserProfileVC.swift */,
+				A35E3B2A241B306400729639 /* MessagesController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A31E65CA2416AB9000BEF622 /* Extensioins.swift */,
+				A35E3B28241A83FB00729639 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -254,9 +278,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31E65CD2419265300BEF622 /* SignUpVC.swift in Sources */,
+				A35E3B2B241B306400729639 /* MessagesController.swift in Sources */,
+				A35E3B29241A83FB00729639 /* Constants.swift in Sources */,
+				A35E3B1D241A335700729639 /* MainTabVC.swift in Sources */,
 				A31E65CB2416AB9000BEF622 /* Extensioins.swift in Sources */,
+				A35E3B27241A362100729639 /* UserProfileVC.swift in Sources */,
 				A31E6596240EAC9600BEF622 /* AppDelegate.swift in Sources */,
+				A35E3B23241A35CA00729639 /* UploadPostVC.swift in Sources */,
+				A35E3B21241A35A900729639 /* SearchVC.swift in Sources */,
 				A31E65C92416A8C600BEF622 /* LoginVC.swift in Sources */,
+				A35E3B1F241A357B00729639 /* FeedVC.swift in Sources */,
+				A35E3B25241A35EC00729639 /* NotificationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

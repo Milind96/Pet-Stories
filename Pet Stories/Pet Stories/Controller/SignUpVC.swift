@@ -97,7 +97,7 @@ class SignUpVC: UIViewController,UIImagePickerControllerDelegate, UINavigationCo
         configureViewComponents()
         
         view.addSubview(alreadyHaveAccountButton)
-        alreadyHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+        alreadyHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 150)
     }
     
     // MARK: - UIImagePickerController
@@ -182,10 +182,10 @@ class SignUpVC: UIViewController,UIImagePickerControllerDelegate, UINavigationCo
                     
                     // user id
                     guard let uid = authResult?.user.uid else { return }
-                    guard let fcmToken = Messaging.messaging().fcmToken else { return }
+                    //guard let fcmToken = Messaging.messaging().fcmToken else { return }
                     
                     let dictionaryValues = ["name": fullName,
-                                            "fcmToken": fcmToken,
+                                            //"fcmToken": fcmToken,
                                             "username": username,
                                             "profileImageUrl": profileImageUrl]
                     
@@ -198,7 +198,7 @@ class SignUpVC: UIViewController,UIImagePickerControllerDelegate, UINavigationCo
                         
                         // configure view controllers in maintabvc
                         mainTabVC.configureViewControllers()
-                        mainTabVC.isInitialLoad = true
+                        //mainTabVC.isInitialLoad = true
                         
                         // dismiss login controller
                         self.dismiss(animated: true, completion: nil)
